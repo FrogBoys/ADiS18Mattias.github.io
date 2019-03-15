@@ -1,66 +1,10 @@
 jQuery("#simulation")
-  .on("click", ".s-300780f9-cf63-40c5-8b84-9d7103beba21 .click", function(event, data) {
+  .on("click", ".s-8522cd46-968e-45cc-9f2f-ea90ffcff248 .click", function(event, data) {
     var jEvent, jFirer, cases;
     if(data === undefined) { data = event; }
     jEvent = jimEvent(event);
     jFirer = jEvent.getEventFirer();
-    if(jFirer.is("#s-Image_72")) {
-      cases = [
-        {
-          "blocks": [
-            {
-              "actions": [
-                {
-                  "action": "jimShow",
-                  "parameter": {
-                    "target": [ "#s-Image_72" ],
-                    "effect": {
-                      "type": "slide",
-                      "duration": 500,
-                      "direction": "left"
-                    }
-                  },
-                  "exectype": "serial",
-                  "delay": 0
-                }
-              ]
-            }
-          ],
-          "exectype": "serial",
-          "delay": 0
-        }
-      ];
-      event.data = data;
-      jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Image_73")) {
-      cases = [
-        {
-          "blocks": [
-            {
-              "actions": [
-                {
-                  "action": "jimShow",
-                  "parameter": {
-                    "target": [ "#s-Image_6","#s-Image_73","#s-Image_1","#s-Image_21","#s-Text_6","#s-Image_56","#s-Text_1","#s-Text_2","#s-Text_5","#s-Rectangle_2" ],
-                    "effect": {
-                      "type": "slide",
-                      "duration": 500,
-                      "direction": "left"
-                    }
-                  },
-                  "exectype": "serial",
-                  "delay": 0
-                }
-              ]
-            }
-          ],
-          "exectype": "serial",
-          "delay": 0
-        }
-      ];
-      event.data = data;
-      jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Image_2")) {
+    if(jFirer.is("#s-Image_2")) {
       cases = [
         {
           "blocks": [
@@ -83,7 +27,58 @@ jQuery("#simulation")
       ];
       event.data = data;
       jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Rectangle_2")) {
+    } else if(jFirer.is("#s-Triangle")) {
+      cases = [
+        {
+          "blocks": [
+            {
+              "actions": [
+                {
+                  "action": "jimNavigation",
+                  "parameter": {
+                    "target": "screens/758e3708-013b-4ea7-9481-2d8d286f03f9"
+                  },
+                  "exectype": "serial",
+                  "delay": 0
+                }
+              ]
+            }
+          ],
+          "exectype": "serial",
+          "delay": 0
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Image_73")) {
+      cases = [
+        {
+          "blocks": [
+            {
+              "actions": [
+                {
+                  "action": "jimShow",
+                  "parameter": {
+                    "target": [ "#s-Text_5","#s-Text_2","#s-Text_1","#s-Image_1","#s-Text_6","#s-Image_73","#s-Image_56","#s-Image_6","#s-Rectangle_3","#s-Image_21" ],
+                    "effect": {
+                      "type": "slide",
+                      "duration": 500,
+                      "direction": "left"
+                    }
+                  },
+                  "exectype": "serial",
+                  "delay": 0
+                }
+              ]
+            }
+          ],
+          "exectype": "serial",
+          "delay": 0
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Rectangle_3")) {
       cases = [
         {
           "blocks": [
@@ -92,7 +87,7 @@ jQuery("#simulation")
                 {
                   "action": "jimHide",
                   "parameter": {
-                    "target": [ "#s-Image_6","#s-Image_1","#s-Image_21","#s-Text_6","#s-Image_56","#s-Text_1","#s-Text_2","#s-Text_5","#s-Rectangle_2" ],
+                    "target": [ "#s-Image_6","#s-Image_1","#s-Image_21","#s-Text_6","#s-Image_56","#s-Text_1","#s-Text_2","#s-Text_5","#s-Rectangle_3" ],
                     "effect": {
                       "type": "slide",
                       "duration": 500,
@@ -282,6 +277,41 @@ jQuery("#simulation")
                   "action": "jimNavigation",
                   "parameter": {
                     "target": "screens/8d83ce62-658b-4303-a969-32f175827b66"
+                  },
+                  "exectype": "serial",
+                  "delay": 0
+                }
+              ]
+            }
+          ],
+          "exectype": "serial",
+          "delay": 0
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    }
+  })
+  .on("pageload", ".s-8522cd46-968e-45cc-9f2f-ea90ffcff248 .pageload", function(event, data) {
+    var jEvent, jFirer, cases;
+    if(data === undefined) { data = event; }
+    jEvent = jimEvent(event);
+    jFirer = jEvent.getEventFirer();
+    if(jFirer.is("#s-Rectangle_3")) {
+      cases = [
+        {
+          "blocks": [
+            {
+              "actions": [
+                {
+                  "action": "jimHide",
+                  "parameter": {
+                    "target": [ "#s-Text_5","#s-Text_2","#s-Text_1","#s-Image_1","#s-Text_6","#s-Image_56","#s-Image_6","#s-Rectangle_3","#s-Image_21" ],
+                    "effect": {
+                      "type": "slide",
+                      "duration": 500,
+                      "direction": "left"
+                    }
                   },
                   "exectype": "serial",
                   "delay": 0

@@ -709,4 +709,39 @@ jQuery("#simulation")
       event.data = data;
       jEvent.launchCases(cases);
     }
+  })
+  .on("pageload", ".s-57129d45-d655-4acf-ae9f-4da5cb87288d .pageload", function(event, data) {
+    var jEvent, jFirer, cases;
+    if(data === undefined) { data = event; }
+    jEvent = jimEvent(event);
+    jFirer = jEvent.getEventFirer();
+    if(jFirer.is("#s-Rectangle_2")) {
+      cases = [
+        {
+          "blocks": [
+            {
+              "actions": [
+                {
+                  "action": "jimHide",
+                  "parameter": {
+                    "target": [ "#s-Text_2","#s-Image_57","#s-Image_6","#s-Rectangle_2","#s-Text_6","#s-Image_1","#s-Image_21","#s-Text_5","#s-Text_1" ],
+                    "effect": {
+                      "type": "slide",
+                      "duration": 500,
+                      "direction": "left"
+                    }
+                  },
+                  "exectype": "serial",
+                  "delay": 0
+                }
+              ]
+            }
+          ],
+          "exectype": "serial",
+          "delay": 0
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    }
   });

@@ -1,19 +1,20 @@
 jQuery("#simulation")
-  .on("click", ".s-f2e84e30-9d1e-4c50-8240-fe9ee4869527 .click", function(event, data) {
+  .on("click", ".s-f5ec0ba9-eabf-403c-ab30-ac683a9da448 .click", function(event, data) {
     var jEvent, jFirer, cases;
     if(data === undefined) { data = event; }
     jEvent = jimEvent(event);
     jFirer = jEvent.getEventFirer();
-    if(jFirer.is("#s-Button_1")) {
+    if(jFirer.is("#s-Image_42")) {
       cases = [
         {
           "blocks": [
             {
               "actions": [
                 {
-                  "action": "jimEnable",
+                  "action": "jimSetValue",
                   "parameter": {
-                    "target": [ "#s-Input_4","#s-Input_3","#s-Input_2","#s-Input_1" ]
+                    "target": [ "#s-Text_6" ],
+                    "value": "1"
                   },
                   "exectype": "serial",
                   "delay": 0
@@ -23,38 +24,93 @@ jQuery("#simulation")
           ],
           "exectype": "serial",
           "delay": 0
-        },
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Image_145")) {
+      cases = [
         {
           "blocks": [
             {
               "actions": [
                 {
-                  "action": "jimChangeStyle",
-                  "parameter": [ {
-                    "#s-f2e84e30-9d1e-4c50-8240-fe9ee4869527 #s-Input_4 input": {
-                      "attributes": {
-                        "color": "#000000"
-                      }
-                    }
-                  },{
-                    "#s-f2e84e30-9d1e-4c50-8240-fe9ee4869527 #s-Input_3 input": {
-                      "attributes": {
-                        "color": "#000000"
-                      }
-                    }
-                  },{
-                    "#s-f2e84e30-9d1e-4c50-8240-fe9ee4869527 #s-Input_2 input": {
-                      "attributes": {
-                        "color": "#000000"
-                      }
-                    }
-                  },{
-                    "#s-f2e84e30-9d1e-4c50-8240-fe9ee4869527 #s-Input_1 input": {
-                      "attributes": {
-                        "color": "#000000"
-                      }
-                    }
-                  } ],
+                  "action": "jimSetValue",
+                  "parameter": {
+                    "target": [ "#s-Text_6" ],
+                    "value": "0"
+                  },
+                  "exectype": "serial",
+                  "delay": 0
+                }
+              ]
+            }
+          ],
+          "exectype": "serial",
+          "delay": 0
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Image_43")) {
+      cases = [
+        {
+          "blocks": [
+            {
+              "actions": [
+                {
+                  "action": "jimSetValue",
+                  "parameter": {
+                    "target": [ "#s-Text_7" ],
+                    "value": "1"
+                  },
+                  "exectype": "serial",
+                  "delay": 0
+                }
+              ]
+            }
+          ],
+          "exectype": "serial",
+          "delay": 0
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Image_146")) {
+      cases = [
+        {
+          "blocks": [
+            {
+              "actions": [
+                {
+                  "action": "jimSetValue",
+                  "parameter": {
+                    "target": [ "#s-Text_7" ],
+                    "value": "0"
+                  },
+                  "exectype": "serial",
+                  "delay": 0
+                }
+              ]
+            }
+          ],
+          "exectype": "serial",
+          "delay": 0
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Button_1")) {
+      cases = [
+        {
+          "blocks": [
+            {
+              "actions": [
+                {
+                  "action": "jimShow",
+                  "parameter": {
+                    "target": [ "#s-Text_13","#s-Rectangle_6","#s-Text_15","#s-Text_12","#s-Button_1","#s-Text_8","#s-Text_9" ]
+                  },
                   "exectype": "serial",
                   "delay": 0
                 }
@@ -74,50 +130,10 @@ jQuery("#simulation")
             {
               "actions": [
                 {
-                  "action": "jimShow",
+                  "action": "jimNavigation",
                   "parameter": {
-                    "target": [ "#s-Rectangle_1","#s-Text_4","#s-Text_3","#s-Text_2","#s-Button_2","#s-Text_5" ]
+                    "target": "screens/8522cd46-968e-45cc-9f2f-ea90ffcff248"
                   },
-                  "exectype": "serial",
-                  "delay": 0
-                }
-              ]
-            }
-          ],
-          "exectype": "serial",
-          "delay": 0
-        },
-        {
-          "blocks": [
-            {
-              "actions": [
-                {
-                  "action": "jimChangeStyle",
-                  "parameter": [ {
-                    "#s-f2e84e30-9d1e-4c50-8240-fe9ee4869527 #s-Input_4 input": {
-                      "attributes": {
-                        "color": "#999999"
-                      }
-                    }
-                  },{
-                    "#s-f2e84e30-9d1e-4c50-8240-fe9ee4869527 #s-Input_3 input": {
-                      "attributes": {
-                        "color": "#999999"
-                      }
-                    }
-                  },{
-                    "#s-f2e84e30-9d1e-4c50-8240-fe9ee4869527 #s-Input_2 input": {
-                      "attributes": {
-                        "color": "#999999"
-                      }
-                    }
-                  },{
-                    "#s-f2e84e30-9d1e-4c50-8240-fe9ee4869527 #s-Input_1 input": {
-                      "attributes": {
-                        "color": "#999999"
-                      }
-                    }
-                  } ],
                   "exectype": "serial",
                   "delay": 0
                 }
@@ -130,7 +146,7 @@ jQuery("#simulation")
       ];
       event.data = data;
       jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Rectangle_1")) {
+    } else if(jFirer.is("#s-Rectangle_6")) {
       cases = [
         {
           "blocks": [
@@ -139,7 +155,7 @@ jQuery("#simulation")
                 {
                   "action": "jimHide",
                   "parameter": {
-                    "target": [ "#s-Rectangle_1","#s-Text_4","#s-Text_3","#s-Text_2","#s-Text_5" ]
+                    "target": [ "#s-Text_13","#s-Rectangle_6","#s-Text_15","#s-Text_12","#s-Text_9","#s-Text_8" ]
                   },
                   "exectype": "serial",
                   "delay": 0
@@ -149,15 +165,20 @@ jQuery("#simulation")
           ],
           "exectype": "serial",
           "delay": 0
-        },
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Rectangle_7")) {
+      cases = [
         {
           "blocks": [
             {
               "actions": [
                 {
-                  "action": "jimDisable",
+                  "action": "jimHide",
                   "parameter": {
-                    "target": [ "#s-Input_4","#s-Input_3","#s-Input_1","#s-Input_2" ]
+                    "target": [ "#s-Text_13","#s-Rectangle_7","#s-Text_15","#s-Text_12","#s-Text_9","#s-Text_8" ]
                   },
                   "exectype": "serial",
                   "delay": 0
@@ -226,7 +247,7 @@ jQuery("#simulation")
                 {
                   "action": "jimShow",
                   "parameter": {
-                    "target": [ "#s-Image_6","#s-Image_73","#s-Image_1","#s-Image_21","#s-Text_9","#s-Image_56","#s-Text_6","#s-Text_7","#s-Text_8","#s-Rectangle_2" ],
+                    "target": [ "#s-Text_5","#s-Text_2","#s-Text_1","#s-Image_1","#s-Text_6","#s-Image_73","#s-Image_56","#s-Image_6","#s-Rectangle_3","#s-Image_21" ],
                     "effect": {
                       "type": "slide",
                       "duration": 500,
@@ -245,7 +266,7 @@ jQuery("#simulation")
       ];
       event.data = data;
       jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Rectangle_2")) {
+    } else if(jFirer.is("#s-Rectangle_4")) {
       cases = [
         {
           "blocks": [
@@ -254,7 +275,7 @@ jQuery("#simulation")
                 {
                   "action": "jimHide",
                   "parameter": {
-                    "target": [ "#s-Image_6","#s-Image_1","#s-Image_21","#s-Text_9","#s-Image_56","#s-Text_6","#s-Text_7","#s-Text_8","#s-Rectangle_2" ],
+                    "target": [ "#s-Image_6","#s-Image_1","#s-Image_21","#s-Text_22","#s-Image_56","#s-Text_19","#s-Text_20","#s-Text_21","#s-Rectangle_4" ],
                     "effect": {
                       "type": "slide",
                       "duration": 500,
@@ -342,7 +363,7 @@ jQuery("#simulation")
       ];
       event.data = data;
       jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Text_6")) {
+    } else if(jFirer.is("#s-Text_19")) {
       cases = [
         {
           "blocks": [
@@ -365,7 +386,7 @@ jQuery("#simulation")
       ];
       event.data = data;
       jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Text_7")) {
+    } else if(jFirer.is("#s-Text_20")) {
       cases = [
         {
           "blocks": [
@@ -388,7 +409,7 @@ jQuery("#simulation")
       ];
       event.data = data;
       jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Text_8")) {
+    } else if(jFirer.is("#s-Text_21")) {
       cases = [
         {
           "blocks": [
@@ -411,7 +432,7 @@ jQuery("#simulation")
       ];
       event.data = data;
       jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Text_9")) {
+    } else if(jFirer.is("#s-Text_22")) {
       cases = [
         {
           "blocks": [
@@ -459,71 +480,13 @@ jQuery("#simulation")
       jEvent.launchCases(cases);
     }
   })
-  .on("pageload", ".s-f2e84e30-9d1e-4c50-8240-fe9ee4869527 .pageload", function(event, data) {
+  .on("pageload", ".s-f5ec0ba9-eabf-403c-ab30-ac683a9da448 .pageload", function(event, data) {
     var jEvent, jFirer, cases;
     if(data === undefined) { data = event; }
     jEvent = jimEvent(event);
     jFirer = jEvent.getEventFirer();
-    if(jFirer.is("#s-Text_1")) {
+    if(jFirer.is("#s-Rectangle_6")) {
       cases = [
-        {
-          "blocks": [
-            {
-              "actions": [
-                {
-                  "action": "jimDisable",
-                  "parameter": {
-                    "target": [ "#s-Input_4","#s-Input_3","#s-Input_2","#s-Input_1" ]
-                  },
-                  "exectype": "serial",
-                  "delay": 0
-                }
-              ]
-            }
-          ],
-          "exectype": "serial",
-          "delay": 0
-        },
-        {
-          "blocks": [
-            {
-              "actions": [
-                {
-                  "action": "jimChangeStyle",
-                  "parameter": [ {
-                    "#s-f2e84e30-9d1e-4c50-8240-fe9ee4869527 #s-Input_4 input": {
-                      "attributes": {
-                        "color": "#999999"
-                      }
-                    }
-                  },{
-                    "#s-f2e84e30-9d1e-4c50-8240-fe9ee4869527 #s-Input_3 input": {
-                      "attributes": {
-                        "color": "#999999"
-                      }
-                    }
-                  },{
-                    "#s-f2e84e30-9d1e-4c50-8240-fe9ee4869527 #s-Input_1 input": {
-                      "attributes": {
-                        "color": "#999999"
-                      }
-                    }
-                  },{
-                    "#s-f2e84e30-9d1e-4c50-8240-fe9ee4869527 #s-Input_2 input": {
-                      "attributes": {
-                        "color": "#999999"
-                      }
-                    }
-                  } ],
-                  "exectype": "serial",
-                  "delay": 0
-                }
-              ]
-            }
-          ],
-          "exectype": "serial",
-          "delay": 0
-        },
         {
           "blocks": [
             {
@@ -531,7 +494,7 @@ jQuery("#simulation")
                 {
                   "action": "jimHide",
                   "parameter": {
-                    "target": [ "#s-Rectangle_1","#s-Text_4","#s-Text_3","#s-Text_2","#s-Text_5" ]
+                    "target": [ "#s-Text_13","#s-Rectangle_6","#s-Text_15","#s-Text_12","#s-Text_9","#s-Text_8" ]
                   },
                   "exectype": "serial",
                   "delay": 0
@@ -545,7 +508,7 @@ jQuery("#simulation")
       ];
       event.data = data;
       jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Image_73")) {
+    } else if(jFirer.is("#s-Rectangle_7")) {
       cases = [
         {
           "blocks": [
@@ -554,7 +517,7 @@ jQuery("#simulation")
                 {
                   "action": "jimHide",
                   "parameter": {
-                    "target": [ "#s-Text_9","#s-Text_6","#s-Text_7","#s-Image_1","#s-Image_56","#s-Image_21","#s-Text_8","#s-Image_6","#s-Rectangle_2" ]
+                    "target": [ "#s-Text_13","#s-Rectangle_7","#s-Text_15","#s-Text_12","#s-Text_9","#s-Text_8" ]
                   },
                   "exectype": "serial",
                   "delay": 0
@@ -568,24 +531,21 @@ jQuery("#simulation")
       ];
       event.data = data;
       jEvent.launchCases(cases);
-    }
-  })
-  .on("variablechange.jim", ".s-f2e84e30-9d1e-4c50-8240-fe9ee4869527 .variablechange", function(event, data) {
-    var jEvent, jFirer, cases;
-    if(data === undefined) { data = event; }
-    jEvent = jimEvent(event);
-    jFirer = jEvent.getEventFirer();
-    if(jFirer.is("#s-Text_2")) {
+    } else if(jFirer.is("#s-Rectangle_4")) {
       cases = [
         {
           "blocks": [
             {
               "actions": [
                 {
-                  "action": "jimSetValue",
+                  "action": "jimHide",
                   "parameter": {
-                    "target": [ "#s-Text_2" ],
-                    "value": ""
+                    "target": [ "#s-Text_22","#s-Text_19","#s-Image_6","#s-Rectangle_4","#s-Image_56","#s-Image_21","#s-Text_21","#s-Image_1","#s-Text_20" ],
+                    "effect": {
+                      "type": "slide",
+                      "duration": 500,
+                      "direction": "left"
+                    }
                   },
                   "exectype": "serial",
                   "delay": 0

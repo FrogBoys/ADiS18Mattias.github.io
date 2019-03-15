@@ -1,10 +1,106 @@
 jQuery("#simulation")
-  .on("click", ".s-8d83ce62-658b-4303-a969-32f175827b66 .click", function(event, data) {
+  .on("click", ".s-5b14c588-d029-45fe-a615-6f8dae1300de .click", function(event, data) {
     var jEvent, jFirer, cases;
     if(data === undefined) { data = event; }
     jEvent = jimEvent(event);
     jFirer = jEvent.getEventFirer();
-    if(jFirer.is("#s-Image_72")) {
+    if(jFirer.is("#s-Image_42")) {
+      cases = [
+        {
+          "blocks": [
+            {
+              "actions": [
+                {
+                  "action": "jimSetValue",
+                  "parameter": {
+                    "target": [ "#s-Text_6" ],
+                    "value": "1"
+                  },
+                  "exectype": "serial",
+                  "delay": 0
+                }
+              ]
+            }
+          ],
+          "exectype": "serial",
+          "delay": 0
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Image_145")) {
+      cases = [
+        {
+          "blocks": [
+            {
+              "actions": [
+                {
+                  "action": "jimSetValue",
+                  "parameter": {
+                    "target": [ "#s-Text_6" ],
+                    "value": "0"
+                  },
+                  "exectype": "serial",
+                  "delay": 0
+                }
+              ]
+            }
+          ],
+          "exectype": "serial",
+          "delay": 0
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Image_43")) {
+      cases = [
+        {
+          "blocks": [
+            {
+              "actions": [
+                {
+                  "action": "jimSetValue",
+                  "parameter": {
+                    "target": [ "#s-Text_7" ],
+                    "value": "1"
+                  },
+                  "exectype": "serial",
+                  "delay": 0
+                }
+              ]
+            }
+          ],
+          "exectype": "serial",
+          "delay": 0
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Image_146")) {
+      cases = [
+        {
+          "blocks": [
+            {
+              "actions": [
+                {
+                  "action": "jimSetValue",
+                  "parameter": {
+                    "target": [ "#s-Text_7" ],
+                    "value": "0"
+                  },
+                  "exectype": "serial",
+                  "delay": 0
+                }
+              ]
+            }
+          ],
+          "exectype": "serial",
+          "delay": 0
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Button_1")) {
       cases = [
         {
           "blocks": [
@@ -13,12 +109,76 @@ jQuery("#simulation")
                 {
                   "action": "jimShow",
                   "parameter": {
-                    "target": [ "#s-Image_72" ],
-                    "effect": {
-                      "type": "slide",
-                      "duration": 500,
-                      "direction": "left"
-                    }
+                    "target": [ "#s-Text_8","#s-Button_1","#s-Text_11","#s-Text_12","#s-Text_9","#s-Rectangle_6","#s-Text_13" ]
+                  },
+                  "exectype": "serial",
+                  "delay": 0
+                }
+              ]
+            }
+          ],
+          "exectype": "serial",
+          "delay": 0
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Button_2")) {
+      cases = [
+        {
+          "blocks": [
+            {
+              "actions": [
+                {
+                  "action": "jimNavigation",
+                  "parameter": {
+                    "target": "screens/8522cd46-968e-45cc-9f2f-ea90ffcff248"
+                  },
+                  "exectype": "serial",
+                  "delay": 0
+                }
+              ]
+            }
+          ],
+          "exectype": "serial",
+          "delay": 0
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Text_14")) {
+      cases = [
+        {
+          "blocks": [
+            {
+              "actions": [
+                {
+                  "action": "jimShow",
+                  "parameter": {
+                    "target": [ "#s-Rectangle_7","#s-Text_18","#s-Text_15","#s-Text_14","#s-Text_19","#s-Text_17","#s-Text_16" ]
+                  },
+                  "exectype": "serial",
+                  "delay": 0
+                }
+              ]
+            }
+          ],
+          "exectype": "serial",
+          "delay": 0
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Rectangle_6")) {
+      cases = [
+        {
+          "blocks": [
+            {
+              "actions": [
+                {
+                  "action": "jimHide",
+                  "parameter": {
+                    "target": [ "#s-Text_8","#s-Text_11","#s-Text_12","#s-Rectangle_6","#s-Text_9","#s-Text_13" ]
                   },
                   "exectype": "serial",
                   "delay": 0
@@ -42,190 +202,6 @@ jQuery("#simulation")
                   "action": "jimNavigation",
                   "parameter": {
                     "target": "screens/758e3708-013b-4ea7-9481-2d8d286f03f9"
-                  },
-                  "exectype": "serial",
-                  "delay": 0
-                }
-              ]
-            }
-          ],
-          "exectype": "serial",
-          "delay": 0
-        }
-      ];
-      event.data = data;
-      jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Button_1")) {
-      cases = [
-        {
-          "blocks": [
-            {
-              "actions": [
-                {
-                  "action": "jimNavigation",
-                  "parameter": {
-                    "target": "screens/5b14c588-d029-45fe-a615-6f8dae1300de"
-                  },
-                  "exectype": "serial",
-                  "delay": 0
-                }
-              ]
-            }
-          ],
-          "exectype": "serial",
-          "delay": 0
-        }
-      ];
-      event.data = data;
-      jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Button_2")) {
-      cases = [
-        {
-          "blocks": [
-            {
-              "actions": [
-                {
-                  "action": "jimNavigation",
-                  "parameter": {
-                    "target": "screens/deee9e1a-edde-4853-b18a-9065bef7454c"
-                  },
-                  "exectype": "serial",
-                  "delay": 0
-                }
-              ]
-            }
-          ],
-          "exectype": "serial",
-          "delay": 0
-        }
-      ];
-      event.data = data;
-      jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Button_3")) {
-      cases = [
-        {
-          "blocks": [
-            {
-              "actions": [
-                {
-                  "action": "jimNavigation",
-                  "parameter": {
-                    "target": "screens/f5ec0ba9-eabf-403c-ab30-ac683a9da448"
-                  },
-                  "exectype": "serial",
-                  "delay": 0
-                }
-              ]
-            }
-          ],
-          "exectype": "serial",
-          "delay": 0
-        }
-      ];
-      event.data = data;
-      jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Text_12")) {
-      cases = [
-        {
-          "blocks": [
-            {
-              "actions": [
-                {
-                  "action": "jimShow",
-                  "parameter": {
-                    "target": [ "#s-Text_12","#s-Rectangle_6","#s-Text_22","#s-Text_24","#s-Text_25","#s-Text_26" ]
-                  },
-                  "exectype": "serial",
-                  "delay": 0
-                }
-              ]
-            }
-          ],
-          "exectype": "serial",
-          "delay": 0
-        }
-      ];
-      event.data = data;
-      jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Text_13")) {
-      cases = [
-        {
-          "blocks": [
-            {
-              "actions": [
-                {
-                  "action": "jimShow",
-                  "parameter": {
-                    "target": [ "#s-Text_13","#s-Rectangle_2","#s-Text_23","#s-Text_17","#s-Text_19","#s-Text_18","#s-Text_20","#s-Text_21" ]
-                  },
-                  "exectype": "serial",
-                  "delay": 0
-                }
-              ]
-            }
-          ],
-          "exectype": "serial",
-          "delay": 0
-        }
-      ];
-      event.data = data;
-      jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Text_11")) {
-      cases = [
-        {
-          "blocks": [
-            {
-              "actions": [
-                {
-                  "action": "jimShow",
-                  "parameter": {
-                    "target": [ "#s-Text_11","#s-Rectangle_2","#s-Text_23","#s-Text_17","#s-Text_19","#s-Text_18","#s-Text_20","#s-Text_21" ]
-                  },
-                  "exectype": "serial",
-                  "delay": 0
-                }
-              ]
-            }
-          ],
-          "exectype": "serial",
-          "delay": 0
-        }
-      ];
-      event.data = data;
-      jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Rectangle_2")) {
-      cases = [
-        {
-          "blocks": [
-            {
-              "actions": [
-                {
-                  "action": "jimHide",
-                  "parameter": {
-                    "target": [ "#s-Rectangle_2","#s-Text_23","#s-Text_17","#s-Text_19","#s-Text_18","#s-Text_20","#s-Text_21" ]
-                  },
-                  "exectype": "serial",
-                  "delay": 0
-                }
-              ]
-            }
-          ],
-          "exectype": "serial",
-          "delay": 0
-        }
-      ];
-      event.data = data;
-      jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Rectangle_6")) {
-      cases = [
-        {
-          "blocks": [
-            {
-              "actions": [
-                {
-                  "action": "jimHide",
-                  "parameter": {
-                    "target": [ "#s-Rectangle_6","#s-Text_22","#s-Text_25","#s-Text_24","#s-Text_26" ]
                   },
                   "exectype": "serial",
                   "delay": 0
@@ -271,7 +247,7 @@ jQuery("#simulation")
                 {
                   "action": "jimShow",
                   "parameter": {
-                    "target": [ "#s-Image_6","#s-Image_73","#s-Image_1","#s-Image_21","#s-Text_6","#s-Image_56","#s-Text_1","#s-Text_2","#s-Text_5","#s-Rectangle_5" ],
+                    "target": [ "#s-Text_5","#s-Text_2","#s-Text_1","#s-Image_1","#s-Text_6","#s-Image_73","#s-Image_56","#s-Image_6","#s-Rectangle_3","#s-Image_21" ],
                     "effect": {
                       "type": "slide",
                       "duration": 500,
@@ -290,7 +266,7 @@ jQuery("#simulation")
       ];
       event.data = data;
       jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Rectangle_5")) {
+    } else if(jFirer.is("#s-Rectangle_7")) {
       cases = [
         {
           "blocks": [
@@ -299,7 +275,30 @@ jQuery("#simulation")
                 {
                   "action": "jimHide",
                   "parameter": {
-                    "target": [ "#s-Image_6","#s-Image_1","#s-Image_21","#s-Text_6","#s-Image_56","#s-Text_1","#s-Text_2","#s-Text_5","#s-Rectangle_5" ],
+                    "target": [ "#s-Rectangle_7","#s-Text_18","#s-Text_15","#s-Text_16","#s-Text_17","#s-Text_19" ]
+                  },
+                  "exectype": "serial",
+                  "delay": 0
+                }
+              ]
+            }
+          ],
+          "exectype": "serial",
+          "delay": 0
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Rectangle_3")) {
+      cases = [
+        {
+          "blocks": [
+            {
+              "actions": [
+                {
+                  "action": "jimHide",
+                  "parameter": {
+                    "target": [ "#s-Image_6","#s-Image_1","#s-Image_21","#s-Text_23","#s-Image_56","#s-Text_20","#s-Text_21","#s-Text_22","#s-Rectangle_3" ],
                     "effect": {
                       "type": "slide",
                       "duration": 500,
@@ -387,7 +386,7 @@ jQuery("#simulation")
       ];
       event.data = data;
       jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Text_1")) {
+    } else if(jFirer.is("#s-Text_20")) {
       cases = [
         {
           "blocks": [
@@ -410,7 +409,7 @@ jQuery("#simulation")
       ];
       event.data = data;
       jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Text_2")) {
+    } else if(jFirer.is("#s-Text_21")) {
       cases = [
         {
           "blocks": [
@@ -433,7 +432,7 @@ jQuery("#simulation")
       ];
       event.data = data;
       jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Text_5")) {
+    } else if(jFirer.is("#s-Text_22")) {
       cases = [
         {
           "blocks": [
@@ -456,7 +455,7 @@ jQuery("#simulation")
       ];
       event.data = data;
       jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Text_6")) {
+    } else if(jFirer.is("#s-Text_23")) {
       cases = [
         {
           "blocks": [
@@ -504,12 +503,12 @@ jQuery("#simulation")
       jEvent.launchCases(cases);
     }
   })
-  .on("pageload", ".s-8d83ce62-658b-4303-a969-32f175827b66 .pageload", function(event, data) {
+  .on("pageload", ".s-5b14c588-d029-45fe-a615-6f8dae1300de .pageload", function(event, data) {
     var jEvent, jFirer, cases;
     if(data === undefined) { data = event; }
     jEvent = jimEvent(event);
     jFirer = jEvent.getEventFirer();
-    if(jFirer.is("#s-Rectangle_1")) {
+    if(jFirer.is("#s-Rectangle_6")) {
       cases = [
         {
           "blocks": [
@@ -518,7 +517,7 @@ jQuery("#simulation")
                 {
                   "action": "jimHide",
                   "parameter": {
-                    "target": [ "#s-Rectangle_2","#s-Rectangle_1","#s-Text_23","#s-Text_17","#s-Text_19","#s-Text_18","#s-Text_20","#s-Text_21" ]
+                    "target": [ "#s-Text_8","#s-Text_11","#s-Text_12","#s-Rectangle_6","#s-Text_9","#s-Text_13" ]
                   },
                   "exectype": "serial",
                   "delay": 0
@@ -528,7 +527,12 @@ jQuery("#simulation")
           ],
           "exectype": "serial",
           "delay": 0
-        },
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Rectangle_7")) {
+      cases = [
         {
           "blocks": [
             {
@@ -536,7 +540,7 @@ jQuery("#simulation")
                 {
                   "action": "jimHide",
                   "parameter": {
-                    "target": [ "#s-Rectangle_1","#s-Rectangle_6","#s-Text_22","#s-Text_25","#s-Text_24","#s-Text_26" ]
+                    "target": [ "#s-Rectangle_7","#s-Text_18","#s-Text_15","#s-Text_19","#s-Text_17","#s-Text_16" ]
                   },
                   "exectype": "serial",
                   "delay": 0
