@@ -120,9 +120,6 @@
       ]
     },
     "a9a4675b-4612-432c-9cad-21366ed0b5ab" : {
-      "Button_2" : [
-        "8522cd46-968e-45cc-9f2f-ea90ffcff248"
-      ],
       "Button_3" : [
         "8522cd46-968e-45cc-9f2f-ea90ffcff248"
       ],
