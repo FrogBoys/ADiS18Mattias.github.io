@@ -247,7 +247,7 @@ jQuery("#simulation")
                 {
                   "action": "jimShow",
                   "parameter": {
-                    "target": [ "#s-Text_5","#s-Text_2","#s-Text_1","#s-Image_1","#s-Text_6","#s-Image_73","#s-Image_56","#s-Image_6","#s-Rectangle_3","#s-Image_21" ],
+                    "target": [ "#s-Text_20","#s-Text_21","#s-Rectangle_4","#s-Image_73","#s-Image_6","#s-Image_1","#s-Image_21","#s-Text_19","#s-Text_22","#s-Image_56" ],
                     "effect": {
                       "type": "slide",
                       "duration": 500,
@@ -298,7 +298,7 @@ jQuery("#simulation")
                 {
                   "action": "jimHide",
                   "parameter": {
-                    "target": [ "#s-Image_6","#s-Image_1","#s-Image_21","#s-Text_22","#s-Image_56","#s-Text_19","#s-Text_20","#s-Text_21","#s-Rectangle_4" ],
+                    "target": [ "#s-Text_20","#s-Text_21","#s-Rectangle_4","#s-Image_6","#s-Image_1","#s-Image_21","#s-Text_19","#s-Text_22","#s-Image_56" ],
                     "effect": {
                       "type": "slide",
                       "duration": 500,
