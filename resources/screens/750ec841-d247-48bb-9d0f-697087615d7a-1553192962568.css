@@ -32,13 +32,13 @@
   border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #404040;
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 5px 5px 5px 5px;
   box-shadow: none;
 }
 #s-750ec841-d247-48bb-9d0f-697087615d7a #s-Rectangle_1 {
   position: absolute;
-  width: 184px;
-  height: 65px;
+  width: 105px;
+  height: 42px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -52,8 +52,8 @@
   font-family: 'Roboto-Regular',Arial;
 }
 #s-750ec841-d247-48bb-9d0f-697087615d7a #s-Rectangle_1 > .clipping, #s-750ec841-d247-48bb-9d0f-697087615d7a #s-Rectangle_1 > .paddingLayer {
-  height: 63px;
-  width: 182px;
+  height: 40px;
+  width: 103px;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 1px;
