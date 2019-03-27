@@ -4,7 +4,34 @@ jQuery("#simulation")
     if(data === undefined) { data = event; }
     jEvent = jimEvent(event);
     jFirer = jEvent.getEventFirer();
-    if(jFirer.is("#s-Button_1")) {
+    if(jFirer.is("#s-Image_42")) {
+      cases = [
+        {
+          "blocks": [
+            {
+              "actions": [
+                {
+                  "action": "jimSetValue",
+                  "parameter": {
+                    "target": [ "#s-Text_6" ],
+                    "value": {
+                      "action": "jimPlus",
+                      "parameter": [ "0","1" ]
+                    }
+                  },
+                  "exectype": "serial",
+                  "delay": 0
+                }
+              ]
+            }
+          ],
+          "exectype": "serial",
+          "delay": 0
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Button_1")) {
       cases = [
         {
           "blocks": [
@@ -96,29 +123,6 @@ jQuery("#simulation")
       ];
       event.data = data;
       jEvent.launchCases(cases);
-    } else if(jFirer.is("#s-Text_21")) {
-      cases = [
-        {
-          "blocks": [
-            {
-              "actions": [
-                {
-                  "action": "jimNavigation",
-                  "parameter": {
-                    "target": "screens/a9a4675b-4612-432c-9cad-21366ed0b5ab"
-                  },
-                  "exectype": "serial",
-                  "delay": 0
-                }
-              ]
-            }
-          ],
-          "exectype": "serial",
-          "delay": 0
-        }
-      ];
-      event.data = data;
-      jEvent.launchCases(cases);
     } else if(jFirer.is("#s-Rectangle_3")) {
       cases = [
         {
@@ -134,6 +138,29 @@ jQuery("#simulation")
                       "duration": 500,
                       "direction": "left"
                     }
+                  },
+                  "exectype": "serial",
+                  "delay": 0
+                }
+              ]
+            }
+          ],
+          "exectype": "serial",
+          "delay": 0
+        }
+      ];
+      event.data = data;
+      jEvent.launchCases(cases);
+    } else if(jFirer.is("#s-Text_21")) {
+      cases = [
+        {
+          "blocks": [
+            {
+              "actions": [
+                {
+                  "action": "jimNavigation",
+                  "parameter": {
+                    "target": "screens/a9a4675b-4612-432c-9cad-21366ed0b5ab"
                   },
                   "exectype": "serial",
                   "delay": 0
