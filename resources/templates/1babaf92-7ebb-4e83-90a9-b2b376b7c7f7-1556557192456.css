@@ -1,0 +1,17 @@
+#t-1babaf92-7ebb-4e83-90a9-b2b376b7c7f7 > #backgroundBox {
+  background-color: #FFFFFF;
+  background-image: none;
+  position: absolute;
+}
+#t-1babaf92-7ebb-4e83-90a9-b2b376b7c7f7 > #alignmentBox {
+  position: relative;
+  max-width: 360px;
+  max-height: 640px;
+  width: 100%;
+  height: 100%;
+}
+#t-1babaf92-7ebb-4e83-90a9-b2b376b7c7f7 > #loadMark {
+  width: 1px;
+  visibility: hidden;
+  display: none;
+}
